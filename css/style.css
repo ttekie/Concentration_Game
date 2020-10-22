@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://tinyurl.com/y274cchz);
+  background-image: url(https://tinyurl.com/y4bprawr);
 }
 .game-square {
   box-sizing: border-box;
@@ -15,6 +15,7 @@ body {
   height: 200%;
   position: absolute;
   top: 0;
+  transition: 400ms;
 }
 .game-square > div > div {
   height: 50%;
@@ -75,5 +76,11 @@ match we need a style: */
   flex-wrap: wrap;
   border: 1px solid red;
   border-radius: 10px;
-  margin: 2em auto;
+  margin: 3em auto;
+}
+#reset-button {
+  margin-left: 32.5em;
+  width: 5em;
+  border-radius: 10px;
+  background-color: brown;
 }
