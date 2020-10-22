@@ -1,0 +1,105 @@
+/* .container {
+  text-align: center;
+  margin: 5em 25%;
+  position: fixed;
+}
+.game-square {
+ height: 130px;
+ font-size: 100px;
+ border-width: 2px;
+ border-style: solid;
+ border-radius: 20px;
+ width: 200px;
+ height: 100px;
+ margin: 2px 2px 2px 2px;
+}
+.square {
+  width: 800px;
+  height: 300px;
+}
+.score-2 {
+  margin-left: 340px;
+}
+.button {
+  margin-right: 260px;
+  width: 5em;
+} */
+body {
+  background-image: url(https://tinyurl.com/y274cchz);
+}
+.game-square {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.game-square > div {
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+}
+.game-square > div > div {
+  height: 50%;
+  /* defulat square has a color */
+}
+.game-square > div > div:first-child {
+  background-color: gray;
+}
+/* To get the square to slide up and reveal the color to
+match we need a style: */
+.flip > div {
+  top: -100%;
+}
+.square-0 {
+  background-color: aqua;
+}
+
+.square-1 {
+  background-color: bisque;
+}
+
+.square-2 {
+  background-color: blue;
+}
+
+.square-3 {
+  background-color: blueviolet;
+}
+
+.square-4 {
+  background-color: brown;
+}
+
+.square-5 {
+  background-color: cadetblue;
+}
+
+.square-6 {
+  background-color: chartreuse;
+}
+
+.square-7 {
+  background-color: chocolate;
+}
+
+.square-8 {
+  background-color: coral;
+}
+
+.square-9 {
+  background-color: cornflowerblue;
+}
+#game {
+  width: 402px;
+  height: 402px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 2em auto;
+}
