@@ -1,10 +1,10 @@
 $(document).ready(function() {
-
+  let audio = new Audio('assets/click.wav');
   let resetButton = document.getElementById("reset-button");
-  let colors = [];
-  for (let i = 0; i < 10; i++) {
-    colors.push('square-' + i);
-  }  // end for loop
+  let colors = ["aqua", "bisque", "blue", "blueviolet",
+                "brown", "cadetblue", "chartreuse",
+                "chocolate","coral", "cornflowerblue"];
+
   // game square will listen for click events
   function GameSquare(el, color) {
     this.el = el;
@@ -20,6 +20,7 @@ $(document).ready(function() {
         if (this.isOpen || this.isLocked) {
           return;
         }
+        audio.play();
         this.isOpen = true;
         this.el.classList.add('flip');
         checkGame(this);   // check the game here
@@ -35,8 +36,8 @@ $(document).ready(function() {
     this.isOpen = true;
   }
   GameSquare.prototype.setColor = function(color) {
-    this.el.children[0].children[1].classList.remove(this.color);
     this.color = color;
+    this.el.children[0].children[1].classList.remove(this.color);
     this.el.children[0].children[1].classList.add(color);
   }
 
@@ -52,7 +53,7 @@ function setupGame() {
       // Get the color at that index
     let color = randomColors.splice(index, 1)[0];
       // Use that color to initialize the GameSquare
-    gameSquares.push(new GameSquare(array[i], colors[0]));
+    gameSquares.push(new GameSquare(array[i], colors));
   }
 }   // end function setupGame
 
@@ -108,9 +109,9 @@ function clearGame() {
   setTimeout(function() {
     randomizeColors();
   }, 500);
-}  // end function clearGame
+}
 
-setupGame();  //invoke setupGame
-clearGame();  // invoke clearGame
+  setupGame();  //invoke setupGame
+  clearGame();  // invoke clearGame
 
 });

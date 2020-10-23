@@ -1,5 +1,9 @@
 body {
-  background-image: url(https://tinyurl.com/y4bprawr);
+  background: url(https://tinyurl.com/y4bprawr) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .game-square {
   box-sizing: border-box;
@@ -29,58 +33,58 @@ match we need a style: */
 .flip > div {
   top: -100%;
 }
-.square-0 {
+.aqua {
   background-color: aqua;
 }
 
-.square-1 {
+.bisque {
   background-color: bisque;
 }
 
-.square-2 {
+.blue {
   background-color: blue;
 }
 
-.square-3 {
+.blueviolet {
   background-color: blueviolet;
 }
 
-.square-4 {
+.brown {
   background-color: brown;
 }
 
-.square-5 {
+.cadetblue {
   background-color: cadetblue;
 }
 
-.square-6 {
+.chartreuse {
   background-color: chartreuse;
 }
 
-.square-7 {
+.chocolate {
   background-color: chocolate;
 }
 
-.square-8 {
+.coral {
   background-color: coral;
 }
 
-.square-9 {
+.cornflowerblue {
   background-color: cornflowerblue;
 }
 #game {
-  width: 402px;
-  height: 402px;
+  width: 400px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 1px solid red;
+  /* border: 1px solid white; */
   border-radius: 10px;
-  margin: 3em auto;
+  margin: 4em auto;
 }
 #reset-button {
   margin-left: 32.5em;
   width: 5em;
   border-radius: 10px;
-  background-color: brown;
+  background-color: cyan;
 }
