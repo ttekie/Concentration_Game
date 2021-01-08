@@ -78,12 +78,14 @@ match we need a style: */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* border: 1px solid white; */
+  /*  border: 1px solid white; */
   border-radius: 10px;
   margin: 4em auto;
 }
 #reset-button {
-  margin-left: 32.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 5em;
   border-radius: 10px;
   background-color: cyan;
