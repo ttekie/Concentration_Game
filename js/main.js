@@ -57,6 +57,7 @@ function setupGame() {
   }
 }   // end function setupGame
 
+// random function will generate a random number
 function random(n) {
   return Math.floor(Math.random() * n);
 }  // end function random
