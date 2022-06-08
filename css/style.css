@@ -8,6 +8,7 @@ body {
 #heading {
   color: green;
   font-family: fantasy;
+  font-weight: 800;
   margin: 25px auto 0 auto;
   text-align: center;
 }
@@ -29,7 +30,7 @@ body {
 }
 .game-square > div > div {
   height: 50%;
-  /* defulat square has a color */
+  /* default square has a color */
 }
 .game-square > div > div:first-child {
   background-color: gray;
@@ -88,13 +89,4 @@ match we need a style: */
   border-radius: 10px;
   margin: 2em auto;
 }
-#reset-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: fantasy;
-  font-size: 18px;
-  width: 5em;
-  border-radius: 10px;
-  background-color: cyan;
-}
+

@@ -4,7 +4,6 @@ $(document).ready(function() {
   let colors = ["aqua", "bisque", "blue", "blueviolet",
                 "brown", "cadetblue", "chartreuse",
                 "chocolate","coral", "cornflowerblue"];
-
   // game square will listen for click events
   function GameSquare(el, color) {
     this.el = el;
